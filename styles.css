@@ -33,3 +33,10 @@ body {
 .game-card .card-title {
   color: #ff4d4d;
 }
+.layout {
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
