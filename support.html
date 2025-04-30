@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center - Inquiries & Suggestions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            margin: 20px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+        }
+        button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #1a252f;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Customer Support Center</h1>
+            <p>We're here to help with your inquiries and suggestions</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="inquiries">
+            <h2>General Inquiries</h2>
+            <p>If you have any questions about our products, services, or policies, please check our FAQ below or contact us directly.</p>
+            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> hilary@yourcompany.com</p>
+                <p><strong>Phone:</strong> 73871260 (Mon-Fri, 9am-5pm EST)</p>
+                <p><strong>Live Chat:</strong> Available on our homepage during business hours</p>
+            </div>
+
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <div class="faq-question">Q: What are your business hours?</div>
+                <p>A: Our customer support team is available Monday through Friday, 9:00 AM to 5:00 PM EST.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: How can I track my order?</div>
+                <p>A: You can track your order by logging into your account or using the tracking number provided in your shipping confirmation email.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: What is your return policy?</div>
+                <p>A: We accept returns within 30 days of purchase. Items must be unused and in their original packaging.</p>
+            </div>
+        </section>
+
+        <section id="suggestions">
+            <h2>Suggestions & Feedback</h2>
+            <p>We value your input! Please share your suggestions for how we can improve our products or services.</p>
+            
+            <form id="suggestion-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="suggestion">Your Suggestion:</label>
+                    <textarea id="suggestion" name="suggestion" required></textarea>
+                </div>
+                <button type="submit">Submit Suggestion</button>
+            </form>
+        </section>
+
+        <section id="contact-form">
+            <h2>Direct Inquiry Form</h2>
+            <p>Can't find what you're looking for? Send us a direct message.</p>
+            
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label for="inquiry-name">Your Name:</label>
+                    <input type="text" id="inquiry-name" name="inquiry-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-email">Email Address:</label>
+                    <input type="email" id="inquiry-email" name="inquiry-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form handling - in a real application, this would connect to a backend
+        document.getElementById('suggestion-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your suggestion! We appreciate your feedback.');
+            this.reset();
+        });
+        
+        document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry. Our team will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
