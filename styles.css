@@ -1,51 +1,48 @@
+/* Navbar Styles */
 .custom-navbar {
   background-color: #d62828;
   font-weight: 500;
 }
+
 .custom-navbar .nav-link {
   color: white;
   margin: 0 10px;
   transition: color 0.2s ease;
 }
+
 .custom-navbar .nav-link:hover {
   color: #ffcccb;
 }
+
 .custom-navbar .navbar-brand {
   font-weight: bold;
   color: white;
 }
+
 .custom-navbar .navbar-brand span {
   color: #ff0000;
 }
-.nav-container {
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-}
+
+/* General Body Styles */
 body {
   background-color: #121212;
   color: white;
 }
+
+/* Game Card Styles */
 .game-card {
   background-color: #1e1e1e;
   border: none;
   color: white;
-}
-.game-card .card-title {
-  color: #ff4d4d;
-}
-/* Flexbox for the Game Cards */
-.container.mt-5 .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Space between cards */
-}
-
-.game-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; /* Centering content inside the card */
   height: 100%;
+}
+
+.game-card .card-title {
+  color: #ff4d4d;
 }
 
 .card-img-top {
@@ -59,6 +56,13 @@ body {
   text-align: center;
 }
 
+/* Flexbox Layout for Game Cards */
+.container.mt-5 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between cards */
+}
+
 /* Ensuring cards take equal space */
 .col-md-6.col-lg-4 {
   display: flex;
@@ -66,6 +70,7 @@ body {
   margin-bottom: 20px; /* Space between rows */
 }
 
+/* Responsive Layout */
 @media (max-width: 768px) {
   .col-md-6 {
     flex: 1 0 48%; /* Adjust to two cards per row on medium screens */
@@ -76,4 +81,10 @@ body {
   .col-md-6 {
     flex: 1 0 100%; /* Adjust to one card per row on small screens */
   }
+}
+
+/* Navigation Container */
+.nav-container {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
 }
