@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Updates</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #00ffd5, #ff4081);
+      background-size: 400% 400%;
+      animation: gradientAnimation 6s ease infinite;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffd5;
+      text-shadow: 0 0 20px #00ffd5, 0 0 30px #ff4081;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: rgba(17, 17, 17, 0.8);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ff4081;
+    }
+
+    .section {
+      margin: 20px;
+      background-color: rgba(26, 26, 26, 0.9);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
+      transition: 0.3s ease;
+    }
+
+    .section:hover {
+      box-shadow: 0 0 30px rgba(0, 255, 213, 1);
+    }
+
+    .section h2 {
+      color: #ff4081;
+      text-shadow: 0 0 10px #ff4081;
+      margin-bottom: 10px;
+    }
+
+    .update-item {
+      margin-bottom: 20px;
+      background-color: #333;
+      padding: 15px;
+      border-radius: 6px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
+    }
+
+    .update-item:hover {
+      transform: scale(1.05);
+      background-color: #444;
+      box-shadow: 0 0 20px rgba(0, 255, 213, 0.8);
+    }
+
+    .update-item h3 {
+      color: #00ffd5;
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .update-item p {
+      color: #aaa;
+      margin: 5px 0;
+    }
+
+    .footer {
+      background-color: rgba(17, 17, 17, 0.9);
+      text-align: center;
+      color: #888;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+      margin-top: auto;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Game Updates</h1>
+  </header>
+
+  <div class="section" id="new-releases">
+    <h2>New Game Releases</h2>
+    <div class="update-item">
+      <h3>The Elder Scrolls VI</h3>
+      <p><strong>Release Date:</strong> November 15, 2025</p>
+      <p><strong>Description:</strong> The next chapter in the Elder Scrolls series promises to bring new lands, quests, and stories. Get ready to explore a completely new world!</p>
+    </div>
+
+    <div class="update-item">
+      <h3>Cyberpunk 2077: Phantom Liberty</h3>
+      <p><strong>Release Date:</strong> October 2025</p>
+      <p><strong>Description:</strong> A huge expansion to the original game, featuring a new storyline, locations, and characters in the cyberpunk universe.</p>
+    </div>
+
+    <!-- Add more new releases here -->
+  </div>
+
+  <div class="section" id="modifications">
+    <h2>Game Modifications & Updates</h2>
+    <div class="update-item">
+      <h3>Fortnite: Chapter 4 - Season 2 Update</h3>
+      <p><strong>Update Date:</strong> May 1, 2025</p>
+      <p><strong>What's New:</strong> New battle passes, weapons, and a new map section. There are also performance improvements and bug fixes.</p>
+    </div>
+
+    <div class="update-item">
+      <h3>Minecraft 1.21 - "Caves & Cliffs Part 3"</h3>
+      <p><strong>Update Date:</strong> April 2025</p>
+      <p><strong>What's New:</strong> Major changes to the cave generation, new mobs, and a whole new set of ores to mine. Get ready to explore deeper than ever before!</p>
+    </div>
+
+    <!-- Add more game modifications here -->
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Game Update Tracker. All rights reserved.</p>
+    <p>Stay updated with the latest game news!</p>
+  </footer>
+
+</body>
+</html>
