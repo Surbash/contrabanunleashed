@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - CONTRABAN UNLEASHED</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Basic reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      background: #111;
+    }
+
+    /* Neon background */
+    .neon-background {
+      background: linear-gradient(135deg, #ff0077, #00ffcc, #ff6600, #ffcc00);
+      background-size: 400% 400%;
+      animation: neonBackground 5s ease infinite;
+      height: 100vh;
+    }
+
+    /* Neon text glow */
+    .neon-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      text-shadow: 
+        0 0 5px #ff0077, 
+        0 0 10px #ff0077, 
+        0 0 15px #ff0077, 
+        0 0 20px #ff0077, 
+        0 0 25px #ff0077, 
+        0 0 30px #ff0077;
+    }
+
+    /* FAQ section styling */
+    .faq-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 10px;
+    }
+
+    /* FAQ questions and answers */
+    .faq-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .faq-question {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    /* Animation for the neon background */
+    @keyframes neonBackground {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Button styling */
+    .btn-neon {
+      background: none;
+      border: 2px solid #ff0077;
+      color: #ff0077;
+      font-weight: bold;
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-neon:hover {
+      background: #ff0077;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Neon Background Section -->
+<div class="neon-background">
+  <div class="faq-container">
+    <h1 class="neon-text">Frequently Asked Questions</h1>
+
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <p class="faq-question">What is Contraban Unleashed?</p>
+      <p class="faq-answer">Contraban Unleashed is a gaming platform offering a variety of games across different genres, available for download and play.</p>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <p class="faq-question">How do I download games from Contraban Unleashed?</p>
+      <p class="faq-answer">To download games, simply browse our game library, select your desired game, and follow the provided download link or instructions.</p>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <p class="faq-question">Are the games free to download?</p>
+      <p class="faq-answer">Contraban Unleashed offers both free and paid games. Each game page will provide details regarding the cost and any available discounts.</p>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item">
+      <p class="faq-question">Can I request new games to be added?</p>
+      <p class="faq-answer">Yes, you can! Use the "Request Games" page to suggest new titles, and we will do our best to add them to our library.</p>
+    </div>
+
+    <!-- FAQ Item 5 -->
+    <div class="faq-item">
+      <p class="faq-question">How do I contact support?</p>
+      <p class="faq-answer">You can reach our support team by visiting the "Contact Us" page, where you can find various contact methods including email and live chat options.</p>
+    </div>
+
+    <!-- Button to go back to home -->
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn-neon">Back to Home</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
