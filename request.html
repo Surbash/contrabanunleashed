@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Request Form</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #00ffd5, #ff4081);
+      background-size: 400% 400%;
+      animation: gradientAnimation 6s ease infinite;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00ffd5;
+      text-shadow: 0 0 20px #00ffd5, 0 0 30px #ff4081;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      background-color: rgba(26, 26, 26, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
+      width: 100%;
+      max-width: 600px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .form-container:hover {
+      box-shadow: 0 0 30px rgba(0, 255, 213, 1);
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #ff4081;
+      text-shadow: 0 0 10px #ff4081;
+    }
+
+    .form-container input, .form-container textarea, .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #222;
+      border: 1px solid #00ffd5;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1em;
+      box-sizing: border-box;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .form-container input:focus, .form-container textarea:focus, .form-container select:focus {
+      outline: none;
+      box-shadow: 0 0 10px #ff4081;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #00ffd5;
+      color: #0d0d0d;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      padding: 15px 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1.2em;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #ff4081;
+      transform: scale(1.1);
+    }
+
+    .form-container .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-container textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .footer {
+      background-color: rgba(17, 17, 17, 0.9);
+      color: #888;
+      padding: 20px;
+      font-size: 0.9em;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Game Request Form</h1>
+
+  <div class="form-container">
+    <form action="submit_form.php" method="POST" id="game-request-form">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="game">Game Title:</label>
+        <input type="text" id="game" name="game" required placeholder="Enter the game title">
+      </div>
+
+      <div class="form-group">
+        <label for="request-type">Request Type:</label>
+        <select id="request-type" name="request-type" required>
+          <option value="">--Select an option--</option>
+          <option value="New Game Suggestion">New Game Suggestion</option>
+          <option value="Game Modification Request">Game Modification Request</option>
+          <option value="General Feedback">General Feedback</option>
+          <option value="Bug Report">Bug Report</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Request/Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message here..."></textarea>
+      </div>
+
+      <input type="submit" value="Submit Request">
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Game Request Tracker. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
