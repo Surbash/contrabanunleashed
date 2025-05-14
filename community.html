@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #0f172a;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #ffdb58;
+            text-shadow: 0 0 0.75rem #ffdb58;
+        }
+
+        .section-heading {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #a855f7;
+            text-shadow: 0 0 0.5rem #a855f7;
+            text-align: center;
+        }
+
+        .gamer-card {
+            background-color: rgba(17, 24, 39, 0.8);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gamer-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
+        }
+
+        .gamer-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 0.5rem #6ee7b7;
+            border: 3px solid #6ee7b7;
+        }
+
+        .gamer-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .gamer-games {
+            font-size: 1rem;
+            color: #d1d5db;
+            margin-bottom: 0;
+        }
+
+        .game-badge {
+            background-color: #4ade80;
+            color: #0f172a;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            margin: 0 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-shadow: 0 0 0.125rem #0f172a;
+        }
+
+        .top-gamers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #f5f5f5;
+            margin-bottom: 2rem;
+            line-height: 1.75;
+            text-shadow: 0 0 0.25rem #f5f5f5;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .gamer-card {
+                width: 45%;
+                margin: 1rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gamer-card {
+                width: 30%;
+            }
+
+            .heading {
+                font-size: 3rem;
+            }
+
+            .section-heading {
+                font-size: 2rem;
+            }
+
+            .section-description {
+                font-size: 1.25rem;
+                line-height: 2;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container">
+        <h1 class="heading">Gamer Community</h1>
+
+        <p class="section-description">
+            Connect with fellow gamers, discover new friends, and explore the games we love.
+        </p>
+
+        <section class="top-gamers">
+            <div class="gamer-card">
+                <img src="https://via.placeholder.com/100" alt="Gamer Avatar" class="gamer-avatar">
+                <h2 class="gamer-name">xXGamerKingXx</h2>
+                <p class="gamer-games">
+                    <span class="game-badge">Cyberpunk 2077</span>
+                    <span class="game-badge">The Witcher 3</span>
+                    <span class="game-badge">Elden Ring</span>
+                </p>
+            </div>
+            <div class="gamer-card">
+                <img src="https://via.placeholder.com/100" alt="Gamer Avatar" class="gamer-avatar">
+                <h2 class="gamer-name">QueenOfHeadshots</h2>
+                <p class="gamer-games">
+                    <span class="game-badge">Valorant</span>
+                    <span class="game-badge">CS:GO</span>
+                    <span class="game-badge">Apex Legends</span>
+                </p>
+            </div>
+            <div class="gamer-card">
+                <img src="https://via.placeholder.com/100" alt="Gamer Avatar" class="gamer-avatar">
+                <h2 class="gamer-name">StealthyNinja</h2>
+                <p class="gamer-games">
+                    <span class="game-badge">Assassin's Creed</span>
+                    <span class="game-badge">Metal Gear Solid</span>
+                    <span class="game-badge">Sekiro</span>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Featured Games</h2>
+            <p class="section-description">
+                Check out some of our community's favorite games.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-gray-800 rounded-lg p-4 shadow-md border border-gray-700">
+                    <h3 class="text-lg font-semibold text-white mb-2">Cyberpunk 2077</h3>
+                    <p class="text-gray-400">An open-world, action-adventure RPG set in Night City.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-4 shadow-md border border-gray-700">
+                    <h3 class="text-lg font-semibold text-white mb-2">The Witcher 3</h3>
+                    <p class="text-gray-400">A story-driven open world role-playing game set in a visually stunning fantasy universe full of meaningful choices and impactful consequences.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-4 shadow-md border border-gray-700">
+                    <h3 class="text-lg font-semibold text-white mb-2">Valorant</h3>
+                    <p class="text-gray-400">A team-based tactical shooter set in the near future.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
