@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #0f172a; /* Dark background */
+            color: #f5f5f5; /* Off-white text for better contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px; /* Increased max-width for larger screens */
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba(17, 24, 39, 0.8); /* Slightly transparent, darker container */
+            border-radius: 0.75rem; /* Rounded edges */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Add a border */
+        }
+
+        .profile-image {
+            width: 150px; /* Increased size */
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; /* Ensure image covers the whole circle */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 0.5rem #6ee7b7; /* Neon glow */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+            border: 3px solid #6ee7b7;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1); /* Slight scale on hover */
+            box-shadow: 0 0 1rem #6ee7b7; /* Increased glow on hover */
+        }
+
+        .name {
+            font-size: 2.25rem; /* Larger font size */
+            font-weight: 700; /* Use 700 for 'bold' in this font */
+            margin-bottom: 1rem;
+            color: #ffdb58; /* Neon yellow */
+            text-shadow: 0 0 0.75rem #ffdb58; /* Yellow glow */
+        }
+
+        .title {
+            font-size: 1.5rem; /* Increased font size */
+            margin-bottom: 1.5rem; /* Increased margin */
+            color: #a855f7; /* Neon purple */
+            text-shadow: 0 0 0.5rem #a855f7;
+        }
+
+        .description {
+            font-size: 1.1rem; /* Slightly larger font */
+            line-height: 1.75; /* Increased line height for better readability */
+            margin-bottom: 2rem; /* Increased margin */
+            color: #f5f5f5;
+            text-shadow: 0 0 0.25rem #f5f5f5;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem; /* Increased gap */
+            margin-bottom: 0; /* Removed default margin-bottom */
+        }
+
+        .social-link {
+            color: #6ee7b7; /* Neon green */
+            font-size: 2rem; /* Increased size */
+            transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Added text-shadow */
+            text-shadow: 0 0 0.5rem #6ee7b7;
+        }
+
+        .social-link:hover {
+            color: #ffffff;
+            transform: scale(1.2); /* Larger scale on hover */
+            text-shadow: 0 0 1rem #6ee7b7; /* Increased glow on hover */
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #d1d5db;
+            text-shadow: 0 0 0.1rem #d1d5db;
+        }
+
+        /* Added media query for larger screens */
+        @media (min-width: 1024px) {
+            .container {
+                padding: 3rem; /* Increased padding on larger screens */
+            }
+
+            .profile-image {
+                width: 200px; /* Increased image size on larger screens */
+                height: 200px;
+            }
+
+            .name {
+                font-size: 3rem; /* Increased name size on larger screens */
+            }
+
+            .title {
+                font-size: 2rem; /* Increased title size on larger screens */
+            }
+
+            .description {
+                font-size: 1.25rem; /* Increased description size on larger screens */
+                line-height: 2; /* Increased line height on larger screens */
+            }
+
+            .social-link {
+                font-size: 3rem; /* Increased social link size on larger screens */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container">
+        <a href="https://github.com/yourusername" target="_blank">
+            <img src="https://github.com/yourusername.png" alt="Profile Picture" class="profile-image">
+        </a>
+        <h1 class="name">Your Name</h1>
+        <h2 class="title">Gamer | Streamer | Content Creator</h2>
+        <p class="description">
+            Welcome to my profile! I'm passionate about gaming and creating awesome content. Join me on my journey!
+        </p>
+        <div class="social-links">
+            <a href="https://twitter.com/yourtwitter" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/youryoutube" target="_blank" class="social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.twitch.tv/yourtwitch" target="_blank" class="social-link">
+                <i class="fab fa-twitch"></i>
+            </a>
+            <a href="https://www.instagram.com/yourinstagram" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2025 Hilary. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Font Awesome Icons
+        document.addEventListener('DOMContentLoaded', () => {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+            document.head.appendChild(link);
+        });
+    </script>
+</body>
+</html>
