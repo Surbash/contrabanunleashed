@@ -67,6 +67,28 @@
       transform: translateX(5px);
       text-shadow: 0 0 10px #00ffd5;
     }
+     #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00ffd5;
+      color: #0d0d0d;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffd5;
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+
+    #backToTop:hover {
+      background-color: #00c0a3;
+    }
+  </style>
+</head>
+<body>
   </style>
 </head>
 <body>
@@ -430,6 +452,41 @@
          <li>Zumba Fitness</li>
         </ul>
    </div>
+     <div class="alphabet-nav">
+    A-Z:
+    <span>
+      <a href="#A">A</a>
+      <a href="#B">B</a>
+      <a href="#C">C</a>
+      <a href="#D">D</a>
+      <a href="#E">E</a>
+      <a href="#F">F</a>
+      <a href="#G">G</a>
+      <a href="#H">H</a>
+      <a href="#I">I</a>
+      <a href="#J">J</a>
+      <a href="#K">K</a>
+      <a href="#L">L</a>
+      <a href="#M">M</a>
+      <a href="#N">N</a>
+      <a href="#O">O</a>
+      <a href="#P">P</a>
+      <a href="#Q">Q</a>
+      <a href="#R">R</a>
+      <a href="#S">S</a>
+      <a href="#T">T</a>
+      <a href="#U">U</a>
+      <a href="#V">V</a>
+      <a href="#W">W</a>
+      <a href="#X">X</a>
+      <a href="#Y">Y</a>
+      <a href="#Z">Z</a>
+    </span>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Top</button>
+
 
 </body>
 </html>
